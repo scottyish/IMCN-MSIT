@@ -259,35 +259,3 @@ class MSITsession(Session):
 
         self.close()
         #self.quit()
-
-# if __name__ == '__main__':
-
-#     import datetime
-#     import os
-#     scanner = False
-#     subject_initials = 1
-#     gend = 'f'
-#     age = 1
-    
-#     this_dir = os.getcwd()
-#     timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-#     output_str = f'sub-{subject_initials}_ses-{session_nr}_task-MSIT_{timestamp}'
-#     output_dir = os.path.join(this_dir, 'SST_MSIT_behavioural/dataMSIT')
-
-#     if simulate == 'y':
-#         #settings_file = '/Users/scotti/surfdrive/experiment_code/py3_SST_MSIT/IMCN-SST-MSIT/simulate_settings.yml'
-#         settings_file = os.path.join(this_dir, 'simulate_settings.yml')
-#     else:
-#         #settings_file = '/Users/scotti/surfdrive/experiment_code/py3_SST_MSIT/IMCN-SST-MSIT/exp_settings.yml'
-#         settings_file = os.path.join(this_dir, 'exp_settings.yml')
-    
-#     # Set-up session
-#     Msess = MSITsession(output_str=output_str,
-#                         output_dir=output_dir,
-#                         settings_file=settings_file,
-#                         subject_initials=subject_initials,
-#                         gend=gend,
-#                         age=age)
-
-#     Msess.run()
-
